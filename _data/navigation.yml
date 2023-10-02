@@ -1,0 +1,16 @@
+- name: Serviços
+  link: /pricing/
+  new_window: false
+  highlight: false
+- name: Laboratório
+  link: https://www.labs.moblog.in/
+  new_window: trues
+  highlight: false
+- name: Sobre Nós
+  link: /about/
+  new_window: false
+  highlight: false
+- name: Contato
+  link: /contact/
+  new_window: false
+  highlight: true

@@ -1,0 +1,15 @@
+- links:
+  - name: Serviços
+    link: /pricing/
+  - name: Laboratório
+    new_window: true
+    link: https://www.labs.moblog.in/
+  - name: Sobre Nós
+    link: /about/
+  - name: Contato
+    link: /contact/
+- links:
+  - name: Linkedin
+    link: https://www.linkedin.com/company/moblog-security-researchers
+    social_icon: LinkedIn
+    new_window: true

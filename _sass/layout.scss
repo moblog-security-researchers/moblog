@@ -150,23 +150,30 @@ blockquote:before {
 
 /* Estilos padrão para o navbar fixo */
 .fixed {
-    position: fixed;
-    top: 1%;
-    left: 15.5%;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(40, 42, 54, 0.7); /* Cor de fundo com transparência (no exemplo, 70% de opacidade) */
-    border-radius: 10px;
-    transition: top 0.9s ease;
+	position: fixed;
+	top: 1%;
+	left: 15.5%;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgba(40, 42, 54, 0.7);
+	/* Cor de fundo com transparência (no exemplo, 70% de opacidade) */
+	border-radius: 10px;
+	transition: top 0.9s ease;
+	position: absolute;
+	/* Alterado para 'absolute' para ocupar a largura total */
 }
 
 /* Estilos para telas menores, como dispositivos móveis */
 @media screen and (max-width: 768px) {
-    .fixed {
-        top: 1%; /* Altere o valor de top para 0 em telas menores para ajustar a posição */
+	.fixed {
+		top: 1%;
+		/* Altere o valor de top para 0 em telas menores para ajustar a posição */
 		left: 1.5%;
-        width: 90%; /* Ajuste a largura para ocupar toda a largura da tela */
-    }
+		width: 90%;
+		/* Ajuste a largura para ocupar toda a largura da tela */
+		position: absolute;
+		/* Alterado para 'absolute' para ocupar a largura total */
+	}
 }
 
 

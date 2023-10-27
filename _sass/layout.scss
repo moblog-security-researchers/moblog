@@ -148,27 +148,79 @@ blockquote:before {
 	text-align: center;
 }
 
-/* Estilos padrão para o navbar fixo */
-.fixed {
-    position: fixed;
-    top: 1%;
-    left: 15.5%;
-    width: 68%;
-    z-index: 1000;
-    background-color: rgba(40, 42, 54, 0.7); /* Cor de fundo com transparência (no exemplo, 70% de opacidade) */
-    border-radius: 10px;
-    transition: top 0.9s ease;
+.img-logo {
+	left:19%;
 }
+
+
+@keyframes slideFromLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideFromRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.slide-from-left {
+	animation: slideFromLeft 1s ease forwards;
+}
+
+.slide-from-right {
+	animation: slideFromRight 2s ease forwards;
+}
+
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	align-items: center;
+	/* Centralize verticalmente */
+	background-color: #44475A;
+	transition: top 0.9s ease;
+	padding: 10px;
+	/* Adicione preenchimento para aumentar a largura */
+	margin: 0 auto;
+	/* Centralize o elemento na largura da tela */
+	max-width: -moz-available;
+	/* Note que este valor pode não ser suportado em todos os navegadores */
+}
+
+
 
 /* Estilos para telas menores, como dispositivos móveis */
 @media screen and (max-width: 768px) {
-    .fixed {
-        top: 1%; /* Altere o valor de top para 0 em telas menores para ajustar a posição */
-		left: 0.5%;
-        width: 90%; /* Ajuste a largura para ocupar toda a largura da tela */
-    }
-}
+	.fixed {
+		top: 0%;
+		/* Altere o valor de top para 0 em telas menores para ajustar a posição */
+		left: 0.0%;
+		width: 100%;
+		/* Ajuste a largura para ocupar toda a largura da tela */
+		max-width: auto;
+	}
 
+	.img-logo {
+		left:19%;
+	}
+}
 
 
 .editor-link {

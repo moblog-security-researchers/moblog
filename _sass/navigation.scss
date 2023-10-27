@@ -53,10 +53,11 @@ nav {
 		&.nav-toggle {
 			display: inline;
 			position: absolute;
-			right: 10px;
-			top: -22px;
+			right: 18px;
+			top: -4px;
 			font-size: 1.9em;
 			border: 0;
+		  }
 
 			@media #{$mid-point} {
 				display: none;

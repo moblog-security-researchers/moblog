@@ -16,21 +16,27 @@
 
 <script>
 
-// Obtenha o elemento do nav-container
-const navContainer = document.getElementById('nav-container');
-
-// Função para verificar a posição da janela e aplicar ou remover a classe "fixed" com atraso
-function toggleNavbarFixed() {
-    if (window.scrollY >  window.innerHeight) { // Verifica se a janela foi rolada 4 vezes a altura da janela
-        navContainer.classList.add('fixed');
-    } else {
-        navContainer.classList.remove('fixed');
-    }
-}
-
-// Adicione um ouvinte de evento de rolagem para chamar a função quando a página for rolada
-window.addEventListener('scroll', toggleNavbarFixed);
-
-// Chame a função para definir o estado inicial do menu de navegação
-toggleNavbarFixed();
-</script>
+	// Obtenha o elemento do nav-container
+	const navContainer = document.getElementById('nav-container');
+	const nav = document.getElementById('nav');
+	const img = document.getElementById('img-logo');
+	
+	// Função para verificar a posição da janela e aplicar ou remover a classe "fixed" com atraso
+	function toggleNavbarFixed() {
+		if (window.scrollY >  window.innerHeight) { // Verifica se a janela foi rolada 4 vezes a altura da janela
+			navContainer.classList.add('fixed');
+			nav.classList.add('nav-fixed');
+			img.classList.add('img-logo');
+		} else {
+			navContainer.classList.remove('fixed');
+			nav.classList.remove('nav-fixed');
+			img.classList.remove('img-logo');
+		}
+	}
+	
+	// Adicione um ouvinte de evento de rolagem para chamar a função quando a página for rolada
+	window.addEventListener('scroll', toggleNavbarFixed);
+	
+	// Chame a função para definir o estado inicial do menu de navegação
+	toggleNavbarFixed();
+	</script>

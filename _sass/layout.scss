@@ -152,6 +152,12 @@ blockquote:before {
 	left:19%;
 }
 
+.eleve {
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 1px solid #000;
+  }
+  
 
 @keyframes slideFromLeft {
 	from {
